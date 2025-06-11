@@ -26,7 +26,7 @@ public class NPCMove : MonoBehaviour
     {
         float distToTarget = Vector3.Distance(targets[targetIndex].position, transform.position);
         agent.destination = targets[targetIndex].position;
-        if (distToTarget < 0.7f)
+        if (distToTarget < 0.5f)
         {
             anim.SetBool("isWalking", false);
             countUp += Time.deltaTime;
