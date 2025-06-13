@@ -21415,6 +21415,27 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b324b148b509104cb0f42a02b6b4b78, type: 3}
+--- !u!1 &509179754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1135819022133726, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+  m_PrefabInstance: {fileID: 1404198386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &509179755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509179754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54dd7c92de090b744abae959d1e641da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodDistance: 0.2
+  nodSpeed: 2
+  shakeAngle: 15
+  shakeSpeed: 2
 --- !u!1001 &510909450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38892,11 +38913,43 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08fbd81b18b8c4949b0f5b250596657a, type: 3}
---- !u!4 &976456312 stripped
+--- !u!4 &976456312
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 1677276578515602368, guid: 5203ed3c52a18f54c9f483844d768d19, type: 3}
   m_PrefabInstance: {fileID: 2046580581}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946848740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 437.6722, y: 86.42226, z: 480.05313}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 377292821}
+  - {fileID: 2113506458}
+  - {fileID: 1588337265}
+  - {fileID: 245012470}
+  - {fileID: 625591495}
+  - {fileID: 1701364680}
+  - {fileID: 1823967805}
+  - {fileID: 63248294}
+  - {fileID: 1580456519}
+  - {fileID: 42035968}
+  - {fileID: 995793138}
+  - {fileID: 1883614665}
+  - {fileID: 64743096}
+  - {fileID: 1977190259}
+  - {fileID: 531271631}
+  - {fileID: 853026483}
+  - {fileID: 191865718}
+  - {fileID: 818633292}
+  - {fileID: 1671026888}
+  - {fileID: 1163889185}
+  - {fileID: 1365071944}
+  - {fileID: 595468257}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &977880730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54749,14 +54802,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95793651619737222, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 137964310643100932, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 05fc7648a3701b34fae2539618842255, type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 7217073617268290604, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+      propertyPath: MaxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217073617268290604, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+      propertyPath: MinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217073617268290604, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1933088609, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+    - {fileID: 114123126303982326, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+    - {fileID: 114278290186193392, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+    - {fileID: 449952368704375535, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+    - {fileID: 114801326888315662, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+    - {fileID: 2015391476317371770, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+    - {fileID: 114600598416328368, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+    - {fileID: 797161250934600067, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1135819022133726, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 509179755}
   m_SourcePrefab: {fileID: 100100000, guid: 38ac7b218eed1da4eb6a51f307e7b98b, type: 3}
 --- !u!1001 &1405727564
 PrefabInstance:
@@ -76455,6 +76535,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943042213}
   m_Mesh: {fileID: -5696407722775769032, guid: daa55f8a53cb1fa4aa1e60f7315311d8, type: 3}
+--- !u!1 &1946848740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 2021327357896364410, guid: 5203ed3c52a18f54c9f483844d768d19, type: 3}
+  m_PrefabInstance: {fileID: 2046580581}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976456312}
+  - component: {fileID: 1946848741}
+  m_Layer: 0
+  m_Name: Detailed Grass 01 - Variant 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!205 &1946848741
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 5844825142740384945, guid: 5203ed3c52a18f54c9f483844d768d19, type: 3}
+  m_PrefabInstance: {fileID: 2046580581}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946848740}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.20225692, y: 0.2223537, z: 0.06499088}
+  m_Size: 1.6070306
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.3735995
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 0}
+  - screenRelativeHeight: 0.18657963
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 0}
+  - screenRelativeHeight: 0.09399047
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 0}
+  - screenRelativeHeight: 0.015030765
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 0}
+  m_Enabled: 1
 --- !u!1001 &1946973201
 PrefabInstance:
   m_ObjectHideFlags: 0
