@@ -2686,14 +2686,14 @@ RectTransform:
   m_GameObject: {fileID: 60537383}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49474832, y: 2.1103272, z: 1.8750466}
+  m_LocalScale: {x: 0.4947483, y: 1.0280031, z: 1.8750464}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1524922605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 127.84282, y: 265}
+  m_AnchoredPosition: {x: 117, y: 74}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &60537385
@@ -2716,7 +2716,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "As you step forward, a shimmering form darted across your path.\n\nYour
+    pulse quickens \u2014 this must be Zeph, the Skyfox, guardian of the Skyheart.\n\nA
+    rush of icy wind envelops you, and for a moment, you feel a deep, ancient bond
+    tying your soul to something greater. The path forward is now clear. Zeph will
+    be your guide on this journey."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2750,7 +2754,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2781,7 +2785,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1252.8191, y: 69.93759, z: -743.48206, w: -195.87596}
+  m_margin: {x: -1252.8191, y: -48.839058, z: -785.0465, w: -195.87596}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7336,9 +7340,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91e4778cdfb185d4d9bfe81556dc4333, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1428482291}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91e4778cdfb185d4d9bfe81556dc4333, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1428482292}
   m_SourcePrefab: {fileID: 100100000, guid: 91e4778cdfb185d4d9bfe81556dc4333, type: 3}
 --- !u!1001 &171871010
 PrefabInstance:
@@ -17171,9 +17172,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5382004731742462777, guid: 016f4a7b359d4d448a0c5cfbb05fa8ca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 793602059}
-    - targetCorrespondingSourceObject: {fileID: 5382004731742462777, guid: 016f4a7b359d4d448a0c5cfbb05fa8ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 793602062}
   m_SourcePrefab: {fileID: 100100000, guid: 016f4a7b359d4d448a0c5cfbb05fa8ca, type: 3}
 --- !u!1001 &410098553
 PrefabInstance:
@@ -17339,7 +17337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &413101313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29847,6 +29845,134 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ec7644112f041e46b981eeac940037a, type: 3}
+--- !u!1 &720309760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 720309765}
+  - component: {fileID: 720309764}
+  - component: {fileID: 720309763}
+  - component: {fileID: 720309762}
+  - component: {fileID: 720309761}
+  m_Layer: 0
+  m_Name: FoxTargetPoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &720309761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720309760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebab45a47ba1c09479fdd46b8f582598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popupPanel: {fileID: 1524922604}
+  warningText: {fileID: 60537385}
+  messageToDisplay: "As you step forward, a shimmering form darted across your path.\n\nYour
+    pulse quickens \u2014 this must be Zeph, the Skyfox, guardian of the Skyheart.\n\nA
+    rush of icy wind envelops you, and for a moment, you feel a deep, ancient bond
+    tying your soul to something greater.\n\nThe path forward is now clear. Zeph
+    will be your guide on this journey."
+--- !u!65 &720309762
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720309760}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &720309763
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720309760}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &720309764
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720309760}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &720309765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720309760}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 569.51, y: 73.69277, z: 437.97}
+  m_LocalScale: {x: 4.3842, y: 1.8462, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &723164155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32829,21 +32955,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1321210671}
   turnSpeed: 10
---- !u!114 &793602062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793602056}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9022707baf41a1f40acd2b88d06e19e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textComponent: {fileID: 0}
-  lines: []
-  textSpeed: 0
 --- !u!1001 &794153009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41458,12 +41569,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020165843}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a5ce9d610f79e45bd5f1aa344a8fd6, type: 3}
+  m_Script: {fileID: 11500000, guid: ebab45a47ba1c09479fdd46b8f582598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueZone: {fileID: 1524922606}
+  popupPanel: {fileID: 1524922604}
+  warningText: {fileID: 60537385}
+  messageToDisplay: "As you step forward, a shimmering form darted across your path.\n\nYour
+    pulse quickens \u2014 this must be Zeph, the Skyfox, guardian of the Skyheart.\n\nA
+    rush of icy wind envelops you, and for a moment, you feel a deep, ancient bond
+    tying your soul to something greater.\n\nThe path forward is now clear. Zeph
+    will be your guide on this journey."
 --- !u!1001 &1027621479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57652,21 +57769,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPoint: {fileID: 1020165847}
   player: {fileID: 1795462203}
---- !u!114 &1428482292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428482286}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 657c0eb701ffb1241882e9b6efb02167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1795462203}
-  targetPoint: {fileID: 1020165847}
-  detectionRange: 5
 --- !u!1001 &1429889705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62200,14 +62302,13 @@ GameObject:
   - component: {fileID: 1524922605}
   - component: {fileID: 1524922608}
   - component: {fileID: 1524922607}
-  - component: {fileID: 1524922606}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1524922605
 RectTransform:
   m_ObjectHideFlags: 0
@@ -62217,37 +62318,17 @@ RectTransform:
   m_GameObject: {fileID: 1524922604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8535991, y: 0.20011908, z: 0.22522996}
+  m_LocalScale: {x: 0.8535991, y: 0.4108127, z: 0.22522996}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 60537384}
   m_Father: {fileID: 413101316}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.065000005, y: 0.06544373}
-  m_AnchorMax: {x: 0.94353193, y: 0.27779248}
-  m_AnchoredPosition: {x: -5, y: -5.5}
-  m_SizeDelta: {x: 138, y: 397}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -111}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1524922606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1524922604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ce0da94701872d45be0aa9f0210ba8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textComponent: {fileID: 60537385}
-  messages:
-  - 'Aeron: Zeph...? The Skyfox of legend?'
-  - 'Zeph: The very same. I felt your magic awaken.'
-  - 'Aeron: My magic...? But I barely know how to control it!'
-  - 'eph: With me by your side, you will learn. The Skyheart depends on you'
-  - "Aeron: Alright, Zeph. Lead\_me\_forward!"
-  typingSpeed: 0.05
 --- !u!114 &1524922607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87602,6 +87683,7 @@ SceneRoots:
   - {fileID: 1516073313}
   - {fileID: 170058854}
   - {fileID: 1020165847}
+  - {fileID: 720309765}
   - {fileID: 430414923}
   - {fileID: 1359940828}
   - {fileID: 1836822954}
