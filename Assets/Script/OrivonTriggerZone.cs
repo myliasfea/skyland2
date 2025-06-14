@@ -1,15 +1,22 @@
 using UnityEngine;
 
-public class OrivonTriggerZone : MonoBehaviour
+public class OrionTriggerZone : MonoBehaviour
 {
-    public MasterOrivonAI orivonScript;
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            orivonScript.ActivateMovement();
-            gameObject.SetActive(false); // disable trigger after use
+            MasterOrionAI orionAI = FindObjectOfType<MasterOrionAI>();
+
+            if (orionAI != null)
+            {
+                Debug.Log("Player entered trigger.");
+                orionAI.ActivateMovement();
+            }
+            else
+            {
+                Debug.LogWarning("MasterOrionAI not found in scene.");
+            }
         }
     }
 }

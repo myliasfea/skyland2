@@ -1,40 +1,52 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class MasterOrivonAI : MonoBehaviour
+public class MasterOrionAI : MonoBehaviour
 {
     public Transform player;
-    public Animator animator;
-    public float stopDistance = 1f;
     private NavMeshAgent agent;
-    private bool hasStarted = false;
+    private Animator animator;
 
-    void Start()
+    private bool hasStarted = false;
+    private bool hasTalked = false;
+    private float talkDistance = 2f; // Distance at which NPC starts talking
+
+    private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-    }
+        animator = GetComponent<Animator>();
 
-    void Update()
-    {
-        if (hasStarted && !agent.pathPending)
-        {
-            float distance = Vector3.Distance(transform.position, player.position);
-            if (distance <= stopDistance)
-            {
-                agent.isStopped = true;
-                animator.SetTrigger("StartTalk");
-                hasStarted = false; // prevent repeat
-            }
-        }
+        if (agent == null)
+            Debug.LogError("NavMeshAgent missing.");
+        if (animator == null)
+            Debug.LogError("Animator missing.");
+        if (player == null)
+            Debug.LogError("Player Transform not set.");
     }
 
     public void ActivateMovement()
     {
-        if (!hasStarted)
+        Debug.Log("ActivateMovement called.");
+
+        if (agent && !hasStarted && player)
         {
             hasStarted = true;
+            agent.isStopped = false;
             agent.SetDestination(player.position);
-            animator.SetTrigger("StartWalk");
+            Debug.Log("Destination set to " + player.position);
+            animator?.SetTrigger("StartWalk");
+        }
+    }
+
+    private void Update()
+    {
+        if (hasStarted && !hasTalked && !agent.pathPending &&
+            Vector3.Distance(transform.position, player.position) <= talkDistance)
+        {
+            agent.isStopped = true;
+            animator?.SetTrigger("StartTalk"); // Talk now
+            hasTalked = true;
+            Debug.Log("StartTalk triggered.");
         }
     }
 }
