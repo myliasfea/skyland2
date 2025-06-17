@@ -3088,7 +3088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9245283, g: 0.63800406, b: 0.29829118, a: 1}
+  m_Color: {r: 0.97735846, g: 0.59597063, b: 0.1383053, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3097,10 +3097,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 15
     m_FontStyle: 3
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -3108,10 +3108,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Congratulations! You just finished collect all the coins. Now you have
-    to defeat Sky Pirates to make sure Floating Market is safe.
-
-'
+  m_Text: Congrats! You just finished collect all the coins. Now ready for the battle!
+    Goodluck!
 --- !u!222 &57640182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -90695,6 +90693,7 @@ GameObject:
   - component: {fileID: 1795462205}
   - component: {fileID: 1795462206}
   - component: {fileID: 1795462207}
+  - component: {fileID: 1795462208}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -90853,6 +90852,21 @@ MonoBehaviour:
   portalA: {fileID: 68802946}
   portalB: {fileID: 2036685903}
   portalC: {fileID: 640584279}
+--- !u!114 &1795462208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795462199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc4c7d1ff6a3c54aacd6a3ede8f87d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashForce: 20
+  dashDuration: 0.2
+  dashCooldown: 2
 --- !u!1001 &1795915066
 PrefabInstance:
   m_ObjectHideFlags: 0
