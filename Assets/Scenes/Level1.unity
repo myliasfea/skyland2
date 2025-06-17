@@ -3072,7 +3072,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.32879132, y: 0.246}
   m_AnchorMax: {x: 0.6388957, y: 0.59967744}
-  m_AnchoredPosition: {x: 20, y: -2.5000076}
+  m_AnchoredPosition: {x: 20, y: -2.5}
   m_SizeDelta: {x: -186, y: -147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &57640181
@@ -5720,6 +5720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 106194257}
+  - component: {fileID: 106194258}
   m_Layer: 0
   m_Name: HandSocket
   m_TagString: Untagged
@@ -5743,6 +5744,28 @@ Transform:
   - {fileID: 394075340}
   m_Father: {fileID: 1163096896}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &106194258
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106194256}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5d55efae668f22b4b82738aaa64cbdfa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &107245477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90694,6 +90717,7 @@ GameObject:
   - component: {fileID: 1795462206}
   - component: {fileID: 1795462207}
   - component: {fileID: 1795462208}
+  - component: {fileID: 1795462210}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -90867,6 +90891,19 @@ MonoBehaviour:
   dashForce: 20
   dashDuration: 0.2
   dashCooldown: 2
+--- !u!114 &1795462210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795462199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0eb0df522932ef4495750ff14156361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackAnimator: {fileID: 106194258}
 --- !u!1001 &1795915066
 PrefabInstance:
   m_ObjectHideFlags: 0
