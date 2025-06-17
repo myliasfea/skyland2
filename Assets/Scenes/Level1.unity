@@ -3750,21 +3750,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.498291, y: 0.22585, z: 6.4896126}
-  m_Center: {x: -0.0000038146973, y: 0.112925, z: -0.007898331}
---- !u!114 &68802953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68802946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9beed41dc9e66df4aab16655443a5d6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teleportTarget: {fileID: 994050754}
+  m_Size: {x: 6.498291, y: 2.96669, z: 6.589222}
+  m_Center: {x: -0.0000038146973, y: 1.483345, z: 0.041906357}
 --- !u!1001 &70996732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31843,7 +31830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1105559716149332, guid: f5f94dd8b4d56f4458d4511cca4fafce, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4246016748776520, guid: f5f94dd8b4d56f4458d4511cca4fafce, type: 3}
       propertyPath: m_LocalScale.x
@@ -31908,9 +31895,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1105559716149332, guid: f5f94dd8b4d56f4458d4511cca4fafce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 640584280}
-    - targetCorrespondingSourceObject: {fileID: 1105559716149332, guid: f5f94dd8b4d56f4458d4511cca4fafce, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 640584281}
   m_SourcePrefab: {fileID: 100100000, guid: f5f94dd8b4d56f4458d4511cca4fafce, type: 3}
 --- !u!1 &640584279 stripped
 GameObject:
@@ -31938,19 +31922,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.4742894, y: 0.3900218, z: 5.4704633}
   m_Center: {x: -0.00000012167914, y: -0.16574937, z: -0.0000023841856}
---- !u!114 &640584281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640584279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9beed41dc9e66df4aab16655443a5d6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teleportTarget: {fileID: 1402875892}
 --- !u!1001 &642904647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46598,7 +46569,7 @@ GameObject:
   - component: {fileID: 952436507}
   - component: {fileID: 952436506}
   m_Layer: 0
-  m_Name: TeleportPointA
+  m_Name: TeleportTargetA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48657,7 +48628,7 @@ GameObject:
   - component: {fileID: 994050752}
   - component: {fileID: 994050751}
   m_Layer: 0
-  m_Name: TeleportPointB
+  m_Name: TeleportTargetB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54464,7 +54435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 101228, guid: 2f8bac6b7bae5254bbf64855f6613f5e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 479558, guid: 2f8bac6b7bae5254bbf64855f6613f5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54510,6 +54481,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: dbf4b102394f6e04ab19119c570c1c31, type: 2}
+    - target: {fileID: 64679852583236526, guid: 2f8bac6b7bae5254bbf64855f6613f5e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54517,9 +54492,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 101228, guid: 2f8bac6b7bae5254bbf64855f6613f5e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 68802952}
-    - targetCorrespondingSourceObject: {fileID: 101228, guid: 2f8bac6b7bae5254bbf64855f6613f5e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 68802953}
   m_SourcePrefab: {fileID: 100100000, guid: 2f8bac6b7bae5254bbf64855f6613f5e, type: 3}
 --- !u!1001 &1113775290
 PrefabInstance:
@@ -68756,7 +68728,7 @@ GameObject:
   - component: {fileID: 1402875890}
   - component: {fileID: 1402875889}
   m_Layer: 0
-  m_Name: TeleportPointC
+  m_Name: TeleportTargetC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90452,6 +90424,7 @@ GameObject:
   - component: {fileID: 1795462205}
   - component: {fileID: 1795462206}
   - component: {fileID: 1795462207}
+  - component: {fileID: 1795462208}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -90610,6 +90583,22 @@ MonoBehaviour:
   portalA: {fileID: 68802946}
   portalB: {fileID: 2036685903}
   portalC: {fileID: 640584279}
+--- !u!114 &1795462208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795462199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd5e05d686b4e1c438800b8426417887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointB: {fileID: 994050754}
+  pointC: {fileID: 1402875892}
+  winPanel: {fileID: 0}
+  coinCollector: {fileID: 1795462207}
 --- !u!1001 &1795915066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101404,7 +101393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1228844386416836, guid: e38defb93c3160441af64e1c19cd5efd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923412771087636, guid: e38defb93c3160441af64e1c19cd5efd, type: 3}
       propertyPath: m_LocalScale.x
@@ -101469,9 +101458,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1228844386416836, guid: e38defb93c3160441af64e1c19cd5efd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2036685904}
-    - targetCorrespondingSourceObject: {fileID: 1228844386416836, guid: e38defb93c3160441af64e1c19cd5efd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2036685905}
   m_SourcePrefab: {fileID: 100100000, guid: e38defb93c3160441af64e1c19cd5efd, type: 3}
 --- !u!1 &2036685903 stripped
 GameObject:
@@ -101499,19 +101485,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 16.652403, y: 20.543282, z: 16.652403}
   m_Center: {x: 0, y: 9.924671, z: 0}
---- !u!114 &2036685905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036685903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9beed41dc9e66df4aab16655443a5d6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teleportTarget: {fileID: 1402875892}
 --- !u!1001 &2037629053
 PrefabInstance:
   m_ObjectHideFlags: 0
