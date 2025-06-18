@@ -50,7 +50,7 @@ public class Dialogue : MonoBehaviour
     {
         isTyping = true;
         textComponent.text = "";
-
+        
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
